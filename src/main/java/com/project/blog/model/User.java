@@ -1,4 +1,5 @@
 package com.project.blog.model;
+//package com.covenant.springbootmysql.model;
 
 public class User {
     private Integer userid;
