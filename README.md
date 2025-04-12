@@ -1,9 +1,15 @@
 ﻿# SB_RA_CRUD
 
 기술구현: <br>
-SpringBoot, RestApi, CRUD, MVC패턴, intellij 연동, AWS, EC2,
-<br> 
-//Elastic Beanstalk
+SpringBoot, RestApi, CRUD, MVC패턴, intellij 연동, AWS, EC2, <br> 
+//Elastic Beanstalk<br>
+<br>
+<br>
+배운점 : <br>
+1.인터넷 강의가 최고다.<br>
+2.일단 짜고, 오류를 고치는 나의 방식은, 앞으로 협업에서 안좋은 습관이다를 배우고, 고쳤습니다.
+
+
 
 <br>
 <br>
