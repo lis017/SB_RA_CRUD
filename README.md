@@ -14,9 +14,8 @@ SpringBoot, RestApi, CRUD, MVC패턴, github-intellij 연동, AWS, EC2, <br>
 <br>
 <br>
 개발노력 :<br>
-SpringBoot, RestApi, CRUD, MVC:<br>
  인터넷에 코드는 있는데, 그 코드가 어디에 있어야하는지는 없었습니다.<br>
-어떤 디자인패턴으로, 코드들이 어떤 파일이름, 어떤 위치에 배치하는지 알게되는데까지 참 헤맸었습니다.<br>
+어떤 디자인패턴으로, 코드들이 어떤 파일이름, 어떤 위치에 배치하는지 알게되는데까지 참 헤맸지만, 모두 배우게 되었습니다.<br>
 <br>
 EC2, Elastic beanstalk : <br>
 블로그들이 다 옛날의 글들이 대부분이라,<br>
