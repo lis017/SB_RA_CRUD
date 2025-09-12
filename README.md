@@ -1,7 +1,8 @@
 ﻿# SB_RA_CRUD
 
+
 기술구현: <br>
-SpringBoot, RestApi, CRUD, MVC패턴, github-intellij 연동, AWS, EC2, <br> 
+Docker, SpringBoot, RestApi, CRUD, MVC패턴, github-intellij 연동, AWS, EC2, <br> 
 //Elastic Beanstalk<br>
 <br>
 <br>
