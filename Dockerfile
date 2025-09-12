@@ -10,6 +10,8 @@ FROM amazoncorretto:21.0.4 AS build
 WORKDIR /app
 #현재 내 intllij파일경로를 이동한 /app의 리눅스 내의 경로에 카피해라 인듯
 COPY . .
+#window식 줄바꿈을 자동으로 리눅스에 맞는 줄바꿈으로 변경하는 코드
+RUN sed -i 's/\r$//' gradlew
 #명령어 실행? 그레이들 실행해서 jar파일 만들어라
 RUN ./gradlew build
 
