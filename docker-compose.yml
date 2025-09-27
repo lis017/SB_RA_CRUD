@@ -1,0 +1,25 @@
+#도커 (run)명령어 모음파일
+#json파일과 비슷한 데이터보관용파일
+
+#컴포즈로 띄우면, 이 컨테이너 전부 네트워크(컨테이너끼리 연결되어 포장)에 자동으로 넣어줌
+services:
+  #이거하면 컨테이너 띄우는듯
+  #서비스 이름
+  #서비스는 컨테이너를 만들기위한 정보모음(이미지, 포트, 환경변수등)
+  webserver:
+    image: crud:1
+    ports: #포트바인딩
+      - 8100:8100
+    depends_on: #db컨테이너에 의존(올바른 실행순서를위해)
+      - db
+
+  nginx:
+    image: nginx:1
+    ports: #포트바인딩
+      - 80:80
+
+  db:
+    image: postgres:16.10-alpine
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=qwer1234
