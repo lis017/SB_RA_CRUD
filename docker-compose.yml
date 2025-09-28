@@ -12,14 +12,32 @@ services:
       - 8100:8100
     depends_on: #db컨테이너에 의존(올바른 실행순서를위해)
       - db
+    networks:
+      - mynet1
+      - mynet2
 
   nginx:
     image: nginx:1
     ports: #포트바인딩
       - 80:80
+    networks:
+      - mynet1
+    restart: always   #현 컨테이너가 다운되면 항상 재시작하게.
 
   db:
     image: postgres:16.10-alpine
     environment:
       - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=qwer1234
+    networks:
+      - mynet2
+    volumes:
+      - test_vol:/var/lib/postgresql/data
+
+volumes:
+  test_vol:
+    external: true
+
+networks:
+  mynet1:
+  mynet2:
