@@ -8,6 +8,12 @@ services:
   #서비스는 컨테이너를 만들기위한 정보모음(이미지, 포트, 환경변수등)
   webserver:
     image: crud:1
+    build: .  #이미지 새로 업데이트하고, 컨테이너 실행
+    develop:
+      watch:
+        - action: sync+restart  #sync->코드변경사항 컨테이너에 자동복붙 #restart -> 코드만바꿔도, 웹서버는 그대로라 반영안됨. 컨테이너(웹서버 포함)도 리스타트 하라는뜻
+          path: .       #intellij 경로
+          target: /app  #컨테이너 안 경로임
     ports: #포트바인딩
       - 8100:8100
     depends_on: #db컨테이너에 의존(올바른 실행순서를위해)
