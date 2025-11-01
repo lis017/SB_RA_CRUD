@@ -15,7 +15,7 @@ services:
           path: .       #intellij 경로
           target: /app  #컨테이너 안 경로임
     ports: #포트바인딩
-      - 8100:8100
+      - 8080:8080
     depends_on: #db컨테이너에 의존(올바른 실행순서를위해)
       - db
     networks:
