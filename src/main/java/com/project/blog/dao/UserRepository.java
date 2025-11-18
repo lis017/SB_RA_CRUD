@@ -20,7 +20,7 @@ public class UserRepository {
         users.add(new User(400,"park" ));
         users.add(new User(500,"kwon" ));
         users.add(new User(600,"hong" ));
-        System.out.println(users);  //이거 없어도 출력 잘만 됨 //잘 되는지 콘솔에서 보는 확인용 아닐까?
+        System.out.println(users);  //이거 없어도 출력 잘만 됨 //잘 되는지 콘솔에서 보는 확인용
     }
 
     public Map<String, String> getMessage() {
