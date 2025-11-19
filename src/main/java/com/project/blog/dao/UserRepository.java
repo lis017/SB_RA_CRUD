@@ -34,9 +34,7 @@ public class UserRepository {
     public User getUserByUserId(Integer userid) {
         return users.stream()
                 .filter(x -> x.getUserid().equals(userid))
-                //이게뭔데
                 .findFirst()
-                //이 결과값이 새로운 리스트에 나오는거니, 원래리스트의 앞부분에 오는거니
                 .orElse(new User(0, "Not Available"));
     }
 
